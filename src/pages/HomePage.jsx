@@ -17,7 +17,6 @@ const HomePage = () => {
       setMessages((messages) => [...messages, data]);
       const element = document.getElementById('chatbox');
       if(element){
-        console.log("in if");
         element.scroll({ top: element.scrollHeight, behavior: "smooth"})
       }
     });
