@@ -2,7 +2,8 @@ import { nanoid } from 'nanoid';
 import React, { useState, useEffect } from 'react'
 import { io } from 'socket.io-client';
 
-const socket = io("http://localhost:5000");
+const socket = io("https://prechat-backend.herokuapp.com/");
+
 const HomePage = () => {
   const [registered, setRegistered] = useState(false);
   const [userMessage, setUserMessage] = useState("");
